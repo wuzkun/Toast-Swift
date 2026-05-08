@@ -185,7 +185,6 @@
 					151796E61BE68E4B004BA6E5 = {
 						CreatedOnToolsVersion = 7.1;
 						LastSwiftMigration = 1020;
-						ProvisioningStyle = Automatic;
 					};
 					2A37434D1CBFAF4B006A3BAB = {
 						CreatedOnToolsVersion = 7.3;
@@ -373,8 +372,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 358B239FXU;
 				INFOPLIST_FILE = Example/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -384,6 +384,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.scalessec.Toast-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = TianjinWildcardDev;
 			};
 			name = Debug;
 		};

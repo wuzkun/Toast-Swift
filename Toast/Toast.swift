@@ -322,7 +322,11 @@ public extension UIView {
         
         let activityView = UIView(frame: CGRect(x: 0.0, y: 0.0, width: style.activitySize.width, height: style.activitySize.height))
         activityView.backgroundColor = style.activityBackgroundColor
-        activityView.autoresizingMask = [.flexibleLeftMargin, .flexibleRightMargin, .flexibleTopMargin, .flexibleBottomMargin]
+        activityView.autoresizingMask = UIView.AutoresizingMask(rawValue:
+                                                                    UIView.AutoresizingMask.flexibleLeftMargin.rawValue |
+                                                                UIView.AutoresizingMask.flexibleRightMargin.rawValue |
+                                                                UIView.AutoresizingMask.flexibleTopMargin.rawValue |
+                                                                UIView.AutoresizingMask.flexibleBottomMargin.rawValue)
         activityView.layer.cornerRadius = style.cornerRadius
         
         if style.displayShadow {
@@ -436,7 +440,11 @@ public extension UIView {
         
         let wrapperView = UIView()
         wrapperView.backgroundColor = style.backgroundColor
-        wrapperView.autoresizingMask = [.flexibleLeftMargin, .flexibleRightMargin, .flexibleTopMargin, .flexibleBottomMargin]
+        wrapperView.autoresizingMask = UIView.AutoresizingMask(rawValue:
+                                                                UIView.AutoresizingMask.flexibleLeftMargin.rawValue |
+                                                               UIView.AutoresizingMask.flexibleRightMargin.rawValue |
+                                                               UIView.AutoresizingMask.flexibleTopMargin.rawValue |
+                                                               UIView.AutoresizingMask.flexibleBottomMargin.rawValue)
         wrapperView.layer.cornerRadius = style.cornerRadius
         
         if style.displayShadow {
